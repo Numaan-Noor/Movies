@@ -1,0 +1,17 @@
+	{% extends 'base.html' %}
+
+{% block 'content' %}
+
+
+
+    <div data-role="content">
+      <ul data-role="listview">
+        {% for d in data %}
+        <li>{{d.Name}}<input type="button" value="Click for Link" onclick="window.open('/download_board/{{d.id}}')" /></li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+
+     {% endblock %}

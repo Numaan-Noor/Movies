@@ -1,0 +1,11 @@
+	{% extends 'base.html' %}
+
+{% block 'content' %}
+    <h1 style="text-align: center;border: 3px solid Black;">Scroll Down To Download</h1>
+
+
+    <button type="button" style="background-color: #595B83;" class="btn btn-light-blue btn-lg btn-block mb-3">
+        <a href="/final/{{data.id}}" style="color:white;"> Download :  {{data.Name}} </a>
+    </button>
+
+     {% endblock %}
